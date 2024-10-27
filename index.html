@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.min.css" integrity="sha512-6sfYTBLNjOZhwJ5g/J0529qHqIdXxO1BycUHd1LIJjEzVCzX8cHtoXDgd+ylrqCl/OZM/RMDgkn2Dd41lJsJjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-sans">
+
+   <!-- Navbar Section start-->
+<header class="w-full text-white bg-black shadow-lg fixed top-0 left-0 z-10">
+    <div class="container mx-auto flex justify-between items-center p-4 md:p-6">    
+
+        <a href="#home" class="flex items-center">
+            <img src="images/logo.png" alt="Coffee Shop Logo" class="h-10 w-10 mr-2">
+        </a>
+       
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-green-600 transition">Home</a>
+            <a href="#about" class="hover:text-green-600 transition">About</a>
+            <a href="#fragrance" class="hover:text-green-600 transition">Fragrance</a>
+            <a href="#quality" class="hover:text-green-600 transition">Quality</a>
+            <a href="#products" class="hover:text-green-600 transition">Products</a>
+        </nav>
+
+        <!-- Social Icons-->
+        <div class="flex items-center space-x-4">
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-green-600 hover:text-white"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="text-green-600 hover:text-white"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="text-green-600 hover:text-white"><i class="ri-instagram-fill"></i></a>
+            </div>
+            
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="md:hidden text-2xl text-green-600 focus:outline-none">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- hamburger -->
+    <div id="mobile-menu" class="md:hidden bg-black p-4 absolute top-16 left-0 right-0 shadow-lg hidden">
+        <div class="flex justify-end">
+            <!-- close icon -->
+            <button id="close-btn" class="text-2xl text-green-600 focus:outline-none">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-4 mt-4">
+            <a href="#home" class="nav-link hover:text-green-600 transition">Home</a>
+            <a href="#about" class="nav-link hover:text-green-600 transition">About</a>
+            <a href="#fragrance" class="nav-link hover:text-green-600 transition">Fragrance</a>
+            <a href="#quality" class="nav-link hover:text-green-600 transition">Quality</a>
+            <a href="#products" class="nav-link hover:text-green-600 transition">Products</a>
+        </nav>
+    </div>
+</header>
+<!-- Navbar Section end-->
+        
+       <!-- Home Section Start -->
+<section class="relative h-screen text-white">
+    <div class="relative h-[200vh]">
+        
+        <!-- First Background Image -->
+        <div class="relative h-screen bg-cover bg-center bg-[url('images/coffee-2.jpg')]">
+            <div class="absolute inset-0 bg-black opacity-80"></div> 
+        
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center p-3">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-green-600">Organic</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Colombian Coffee</h1>
+                <p class="text-lg md:text-2xm max-w-2xm pb-9 pt-4">Enjoy the finest coffee blends and a cozy atmosphere. Discover our unique coffee fragrances and top-quality beans.</p>
+            </div>
+        </div>
+        
+        <!-- Second Background Image -->
+        <div class="relative h-[400px] bg-repeat bg-green-800 bg-[length:400px_400px] bg-[url('images/coffee_pattern.png')]">
+            <div class="relative w-full h-0 pb-[50%] md:pb-[45%] lg:pb-[35%]" >
+            <img src="images/coffee-bean.png" alt="Overlay Coffee Beans" 
+            class="absolute -top-1/2 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] lg:w-[700px] xl:w-[750px]">
+        </div>
+
+    </div>
+
+        
+        <!-- home section end -->
+
+        <!-- about section start -->
+       <main id="about" class="text-black lg:pl-20 py-28 container flex flex-col gap-20 lg:flex-row">
+  <div class="lg:w-1/2">
+    <div class="flex flex-col text-center lg:text-start">
+      <h1 class="text-green-700 text-4xl font-bold">Caturra & Maragogipe</h1>
+      <h2 class="text-3xl font-semibold">Boutique Plantation Coffee</h2>
+      <p class="mt-5 ">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, sint? Commodi quae molestias, nam omnis corrupti Lorem ipsum dolor sit, amet consectetur adipisicing elit..
+      </p>
+    </div>
+    <div class="flex flex-col lg:items-start pt-4 items-center  gap-5">
+      <button class="relative flex h-14 w-48 bg-green-800 items-center justify-center text-white uppercase ">
+        <span class="relative z-10">Read More</span>
+      </button>
+    </div>
+  </div>
+  <div class="w-2/5">
+    <img src="images/about_image.png" alt="About Image">
+  </div>
+</main>
+
+
+        <!-- about section end -->
+
+        <!-- banner section start -->
+        <section class="relative bg-[url('images/bg_image.jpg')] bg-top bg-no-repeat bg-cover py-16">
+            <div class="container relative z-10">
+              <h3 class="max-w-3xl  text-center mx-auto mb-10 text-black pt-10 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod voluptatem aliquam numquam quo quia, labore officia natus error maiores doloremque nisi qui ad vel amet voluptate. Facilis, dolore dolor.
+              </h3>
+          
+              <div class="grid gap-10 lg:grid-cols-4 text-center items-center pl-5 pb-20">
+                
+                <div class="flex flex-col items-center">
+                  <div class="relative h-60 w-60">
+                    <img src="images/coffee-1.jpg" alt="Coffee 1" class="rounded-full">
+                    <h3 class="absolute font-bold -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white ">01</h3>
+                  </div>
+                  <h3 class="text-black mt-5">Arabica Green</h3>
+                  <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+          
+             
+                <div class="flex flex-col items-center">
+                  <div class="relative h-60 w-60">
+                    <img src="images/coffee-2.jpg" alt="Coffee 2" class="rounded-full">
+                    <h3 class="absolute font-bold -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white ">02</h3>
+                  </div>
+                  <h3 class="text-black mt-5">Robusta Coffee</h3>
+                  <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+          
+                
+                <div class="flex flex-col items-center">
+                  <div class="relative h-60 w-60">
+                    <img src="images/coffee-3.jpg" alt="Coffee 3" class="rounded-full">
+                    <h3 class="absolute font-bold -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white ">03</h3>
+                  </div>
+                  <h3 class="text-black mt-5">Liberica Blend</h3>
+                  <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+          
+                <div class="flex flex-col items-center">
+                  <div class="relative h-60 w-60">
+                    <img src="images/coffee-4.jpg" alt="Coffee 4" class="rounded-full">
+                    <h3 class="absolute font-bold -left-8 top-1/3 h-16 w-16 bg-green-800 grid place-items-center rounded-full text-white  ">04</h3>
+                  </div>
+                  <h3 class="text-black mt-5">Excelsa Aroma</h3>
+                  <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- banner section end -->
+
+
+
+        <!-- quality section start  -->
+        <section class="py-20">
+            <div class="container mx-auto">
+              <div class="grid gap-10 lg:grid-cols-3 items-center">
+                
+                
+                <div class="flex flex-col gap-8 lg:pl-5">
+           
+                  <div class="flex items-center gap-4">
+                    <img src="images/quality_01.png" alt="Quality 1" class="h-12 w-12">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">High Quality Beans</h3>
+                      <p class="text-gray-600">Selected from the best farms.</p>
+                    </div>
+                  </div>
+              
+                  <div class="flex items-center gap-4">
+                    <img src="images/quality_02.png" alt="Quality 2" class="h-12 w-12">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">Organic & Natural</h3>
+                      <p class="text-gray-600">Pure organic coffee beans.</p>
+                    </div>
+                  </div>
+               
+                  <div class="flex items-center gap-4">
+                    <img src="images/quality_03.png" alt="Quality 3" class="h-12 w-12">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">Eco-Friendly Process</h3>
+                      <p class="text-gray-600">Environmentally sustainable.</p>
+                    </div>
+                  </div>
+                </div>
+          
+   
+                <div class="flex justify-center">
+                  <img src="images/cup.png" alt="Quality Center Image" class="w-90 h-auto rounded-lg ">
+                </div>
+          
+              
+                <div class="flex flex-col gap-8 lg:pl-5">
+             
+                  <div class="flex items-center gap-4">
+                    <img src="images/quality_04.png" alt="Quality 4" class="h-12 w-12 ">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">Fair Trade Certified</h3>
+                      <p class="text-gray-600">Supporting fair wages for farmers.</p>
+                    </div>
+                  </div>
+                
+                  <div class="flex items-center gap-4">
+                    <img src="images/quality_05.png" alt="Quality 5" class="h-12 w-12 ">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">Rich Flavor</h3>
+                      <p class="text-gray-600">Intense and smooth taste.</p>
+                    </div>
+                  </div>
+             
+                  <div class="flex items-center gap-4 ">
+                    <img src="images/quality_06.png" alt="Quality 6" class="h-12 w-12 ">
+                    <div>
+                      <h3 class="text-lg font-semibold text-black">Freshly Roasted</h3>
+                      <p class="text-gray-600">Roasted to perfection.</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+          
+        <!-- quality section end  -->
+        <section class="py-10">
+          <div class="container mx-auto">
+            <!-- Main Heading -->
+            <h2 class="text-3xl font-bold text-center mb-4 text-green-800">Online Store</h2>
+            <h3 class="text-4xl font-bold text-center mb-2 text-black">Popular Product</h3>
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+              Discover our premium range of products designed to meet all your needs. Each product is carefully crafted and tested for the highest quality.
+            </p>
+        
+            <!-- Product Details Section Start -->
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+           
+              <div class="flex justify-center">
+                <img src="images/product_01.png" alt="Product Image" class="w-80 h-auto">
+              </div>
+        
+              <div class="space-y-4">
+              
+                <h3 class="text-3xl font-bold text-gray-800">Ethiopia Arabica</h3>
+                
+            
+                <p class="text-gray-700">
+                  This is an excellent product that offers high quality, durability, and reliability. Perfect for everyday use and designed to meet the highest standards.
+                </p>
+        
+               
+                <ul class="space-y-2">
+                  <li class="flex items-center text-black">
+                    <span class="text-green-600 mr-2">✔️</span> Pure Grade
+                  </li>
+                  <li class="flex items-center text-black">
+                    <span class="text-green-600 mr-2">✔️</span> 100% Organic
+                  </li>
+                  <li class="flex items-center text-black">
+                    <span class="text-green-600 mr-2">✔️</span> Sustainable Sourcing
+                  </li>
+                  <li class="flex items-center text-black">
+                    <span class="text-green-600 mr-2">✔️</span> Free from Additives
+                  </li>
+                </ul>
+        
+         
+                <p class="text-2xl font-bold text-gray-800">Rs.5000</p>
+        
+   
+                <button class="mt-4 bg-green-700 text-white px-6 py-3 rounded hover:bg-green-900">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>  
+        
+            <!-- Product Details Section End -->
+        
+
+        <!-- product section start -->
+        <section class="py-20 ">
+            <div class="container mx-auto">
+              <h2 class="text-3xl font-bold text-center mb-10 text-black">Our Products</h2>
+              
+              <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            
+                <div class="p-3 lg:pl-32 flex flex-col items-center">
+                  <img src="images/product_02.png" alt="Product 1" class="h-40 w-auto mb-4">
+
+                  <div class="flex gap-1 mb-2">
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-gray-300">★</span>
+                  </div>
+                  
+           
+                  <h3 class="text-lg font-semibold mb-1">Product Name 1</h3>
+                  <p class="text-gray-700 mb-4">RS.2000</p>
+                  
+              
+                  <button class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700">
+                  ADD TO CART
+                  </button>
+                </div>
+          
+              
+                <div class="p-3 lg:pl-10 flex flex-col items-center">
+                  <img src="images/product_03.png" alt="Product 2" class="h-40 w-auto mb-4">
+         
+                  <div class="flex gap-1 mb-2">
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                  </div>
+                  
+                
+                  <h3 class="text-lg font-semibold mb-1">Product Name 2</h3>
+                  <p class="text-gray-700 mb-4">RS.6000</p>
+                  
+                
+                  <button class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700">
+                    ADD TO CART
+                  </button>
+                </div>
+          
+     
+                <div class="  p-3 lg:pr-10 flex flex-col items-center">
+                  <img src="images/product_04.png" alt="Product 3" class="h-40 w-auto mb-4">
+                  <div class="flex gap-1 mb-2">
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-gray-300">★</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-1">Product Name 3</h3>
+                  <p class="text-gray-700 mb-4">RS.5000</p>
+                  <button class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700">
+                    ADD TO CART
+                  </button>
+                </div>
+          
+           
+                <div class="p-3  lg:pr-32   flex flex-col items-center">
+                  <img src="images/product_05.png" alt="Product 4" class="h-40 w-auto mb-4">
+                  <div class="flex gap-1 mb-2">
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-yellow-500">★</span>
+                    <span class="text-gray-300">★</span>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-1">Product Name 4</h3>
+                  <p class="text-gray-700 mb-4">RS.3000</p>
+                  <button class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700">
+                    ADD TO CART
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+
+          <!-- product section end  -->
+
+          <!-- footer section start -->
+          <footer class="bg-[url('images/footer-bg.jpg')] bg-cover bg-center py-20 text-white">
+            <div class="container mx-auto">
+              <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                
+        
+                <div class="flex flex-col items-center lg:items-center  space-y-4">
+                 
+                  <img src="images/logo.png" alt="Logo" class="w-24 h-auto">
+                
+                  <p class="text-center max-w-xs">
+                    Bringing you the finest quality with a commitment to excellence and sustainability.
+                  </p>
+                 
+                  <div class="flex gap-4 mt-4">
+                    <a href="#" class="hover:text-green-500"><i class="ri-facebook-fill"></i></i></a>
+                    <a href="#" class="hover:text-green-500"><i class="ri-twitter-fill"></i></a>
+                    <a href="#" class="hover:text-green-500"><i class="ri-instagram-fill"></i></a>
+                  
+                  </div>
+                </div>
+                
+              
+                <div class="flex flex-col items-center lg:items-start space-y-4">
+                  <h3 class="text-2xl font-bold text-green-600">Contact Info</h3>
+                 
+                  <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                    <p>123 Coffee Lane, Brew City</p>
+                  </div>
+               
+                  <div class="flex items-center">
+                    <i class="fas fa-phone text-green-500 mr-2"></i>
+                    <p>+1 234567890</p>
+                  </div>
+                </div>
+                
+             
+                <div class="flex flex-col items-center lg:items-start space-y-4">
+                  <h3 class="text-2xl font-bold text-green-600">Subscribe</h3>
+              
+                  <form class="flex w-full sm:items-center">
+                    <input type="email" placeholder="Your Email" class="w-35 px-4 py-2 rounded-full bg-white text-black outline-none placeholder-black">
+                    <button type="submit" class="bg-green-700 px-4 py-2 rounded-full pl-[-5] hover:bg-green-900">Subscribe</button>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </footer>
+          
+          <!-- footer section end -->
+
+
+    <script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+ 
+    menuBtn.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden'); 
+        menuBtn.classList.add('hidden');     
+    });
+
+    closeBtn.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');   
+        menuBtn.classList.remove('hidden');  
+    });
+    </script>
+
+</body>
+</html>
